@@ -1,14 +1,17 @@
+import os
 import requests
 from bs4 import BeautifulSoup
 import time
 
 links = []
 
-for i in range(1, 12):
+if not os.path.exists("data"):
+    os.mkdir("data")
+
+for i in range(1, 3):
     url = 'http://books.toscrape.com/catalogue/page-' + str(i) + '.html'
     res = requests.get(url)
     if res.ok:
-
         soup = BeautifulSoup(res.text, 'lxml')
         h3s = soup.findAll('h3')
         for h3 in h3s:
