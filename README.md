@@ -12,6 +12,16 @@ The main script, `main.py`, scrapes book details and stores them in a CSV file.
 The second script, `recover_urls.py`, is used to generate a list of book URLs for scraping.
 
 ## Requirements
+Run 
+```
+python3 -m venv .venv
+```
+to install the virtual environment
+and then
+```
+source .venv/bin/activate
+```
+
 
 Before running the scripts, make sure you have the necessary Python packages installed. 
 You can install them using the following command:
@@ -37,7 +47,7 @@ python recover_urls.py
 5. It will use the URLs from `data/urls.txt` and store the scraped data in `data/books.csv`.
 
 ```
-python main.py
+python3 main.py
 ```
 
 5. The scraped data will be saved in a file named `books.csv` in the "data" directory.
