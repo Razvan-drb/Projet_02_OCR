@@ -21,6 +21,8 @@ git clone https://github.com/Razvan-drb/Projet_02_OCR.git
 
 Run 
 ```
+sudo apt install python3.10-venv
+
 python3 -m venv .venv
 ```
 to install the virtual environment
