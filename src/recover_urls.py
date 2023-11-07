@@ -10,7 +10,7 @@ def retrieve_and_save_urls():
     if not os.path.exists("data"):
         os.mkdir("data")
 
-    for i in range(1, 3):
+    for i in range(1, 50):
         url = 'http://books.toscrape.com/catalogue/page-' + str(i) + '.html'
         res = requests.get(url)
         if res.ok:
