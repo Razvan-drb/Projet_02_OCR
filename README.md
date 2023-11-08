@@ -19,6 +19,9 @@ Then clone the repository
 git clone https://github.com/Razvan-drb/Projet_02_OCR.git
 ```
 
+
+## Usage
+
 Run 
 ```
 sudo apt install python3.10-venv
@@ -38,40 +41,12 @@ You can install them using the following command:
 ```
 pip install -r requirements.txt
 ```
-
-## Usage
-
-1. Clone or download the project repository to your local machine.
-
-2. Install the required Python packages as mentioned in the "Requirements" section.
-
-3. Execute the `recover_urls.py` script to generate a list of book URLs. This will create a file named `urls.txt` 
-4. in the "data" directory.
-
-```
-python recover_urls.py
-```
-
-4. After generating the list of URLs, you can run the `main.py` script to scrape book data. 
-5. It will use the URLs from `data/urls.txt` and store the scraped data in `data/books.csv`.
+Run
 
 ```
 python3 main.py
 ```
-
-5. The scraped data will be saved in a file named `books.csv` in the "data" directory.
-
-## Structure
-
-The project structure is as follows:
-
-- `main.py`: The main Python script for scraping book data.
-- `recover_urls.py`: A Python script for generating book URLs to scrape.
-- `requirements.txt`: A list of required Python packages and their versions.
-- `README.md`: This file providing project information.
-- `data/urls.txt`: A file containing the URLs of books to scrape.
-- `data/books.csv`: The output file where the scraped data is stored.
-
+To execute the program
 
 ## Author
 
