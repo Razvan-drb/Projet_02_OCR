@@ -9,7 +9,7 @@ Utilisez les bases de Python pour l'analyse de marché
 
 This project consists of two Python scripts for web scraping book information from the website "books.toscrape.com." 
 The main script, `main.py`, scrapes book details and stores them in a CSV file. 
-The second script, `recover_urls.py`, is used to generate a list of book URLs for scraping.
+
 
 ## Requirements
 You need to have python 3.9 installed on your computer : [https://www.python.org/downloads/](https://www.python.org/downloads/release/python-3918/)
