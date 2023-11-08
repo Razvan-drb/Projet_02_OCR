@@ -9,6 +9,12 @@ def download_image(image_url, category, book_title):
     img_filename = f'{img_dir}/{book_title}{file_extension}'
 
     response = requests.get(image_url)
+    
     if response.ok:
-        with open(img_filename, 'wb') as img_file:
-            img_file.write(response.content)
+        try:
+            with open(img_filename, 'wb') as img_file:
+                img_file.write(response.content)
+        except FileNotFoundError as e:
+            print(f"FileNotFoundError: {e}. Skipping file and continuing.")
+    else:
+        print(f"Failed to download image from {image_url}.")
