@@ -85,8 +85,6 @@ def process_book_url(url):
         print_book_data(category, book_title, price_excl_tax, price_incl_tax, tax, availability_number, star_rating,
                         photo_url)
 
-    time.sleep(0.3)
-
 
 def print_book_data(category, title, price_excl_tax, price_incl_tax, tax, availability_number, star_rating, photo_url):
     print('Category: ' + category)
