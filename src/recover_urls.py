@@ -20,7 +20,7 @@ def retrieve_and_save_urls():
                 a = h3.find('a')
                 link = a['href']
                 links.append('http://books.toscrape.com/catalogue/' + link)
-            time.sleep(1)
+            time.sleep(0.1)
 
     with open('data/urls.txt', 'w') as books:
         for link in links:
